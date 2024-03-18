@@ -1,4 +1,6 @@
-namespace IVS_TestyV1
+using IVS_TestyV1;
+
+namespace IVSCalc
 {
     [TestClass]
     public class UnitTest1
@@ -8,12 +10,12 @@ namespace IVS_TestyV1
         {
             // Arrange
             var calculator = new Calculator();
-            int num1 = 2;
-            int num2 = 3;
-            int expectedSum = 5;
+            double num1 = 2;
+            double num2 = 3;
+            double expectedSum = 5;
 
             // Act
-            int actualSum = calculator.Add(num1, num2);
+            double actualSum = calculator.Add(num1, num2);
 
             // Assert
             Assert.AreEqual(expectedSum, actualSum, "The sum is not correct");
@@ -24,12 +26,12 @@ namespace IVS_TestyV1
         {
             // Arrange
             var calculator = new Calculator();
-            int num1 = 3;
-            int num2 = 2;
-            int expectedSum = 1;
+            double num1 = 3;
+            double num2 = 2;
+            double expectedSum = 1;
 
             // Act
-            int actualDiff = calculator.Subtract(num1, num2);
+            double actualDiff = calculator.Subtract(num1, num2);
 
             // Assert
             Assert.AreEqual(expectedSum, actualDiff, "The diff is not correct");
@@ -40,12 +42,12 @@ namespace IVS_TestyV1
         {
             // Arrange
             var calculator = new Calculator();
-            int num1 = 3;
-            int num2 = 2;
-            int expectedSum = 6;
+            double num1 = 3;
+            double num2 = 2;
+            double expectedSum = 6;
 
             // Act
-            int actualMult = calculator.Mult(num1, num2);
+            double actualMult = calculator.Mult(num1, num2);
 
             // Assert
             Assert.AreEqual(expectedSum, actualMult, "The mult is not correct");
@@ -56,12 +58,12 @@ namespace IVS_TestyV1
         {
             // Arrange
             var calculator = new Calculator();
-            int num1 = 4;
-            int num2 = 2;
-            int expectedSum = 2;
+            double num1 = 4;
+            double num2 = 2;
+            double expectedSum = 2;
 
             // Act
-            int actualDiv = calculator.Div(num1, num2);
+            double actualDiv = calculator.Div(num1, num2);
 
             // Assert
             Assert.AreEqual(expectedSum, actualDiv, "The div is not correct");
@@ -81,6 +83,45 @@ namespace IVS_TestyV1
             double actualNum = calculator.MultSum(num1, num2, num3, num4, num5);
 
             Assert.AreEqual(expectedSum, actualNum, 0.0001, "Not correct");
+        }
+
+        [TestMethod]
+        public void TestFactorial()
+        {
+            var calculator = new Calculator();
+            double num1 = 4;
+            double num2 = num1;
+            double expectedSum = 24;
+
+            double actualNum = calculator.Fact(num1, num2);
+
+            Assert.AreEqual(expectedSum, actualNum, "Not correct");
+        }
+
+        [TestMethod]
+        public void TestExponent()
+        {
+            var calculator = new Calculator();
+            double num1 = 5;
+            int num2 = 2;
+            double expectedSum = 25;
+
+            double actualNum = calculator.Exponent(num1, num2);
+
+            Assert.AreEqual(expectedSum, actualNum, "Not correct");
+        }
+
+        [TestMethod]
+        public void TestRoot()
+        {
+            var calculator = new Calculator();
+            double num1 = 9;
+            int num2 = 2;
+            double expectedSum = 3;
+
+            double actualNum = calculator.Root(num1, num2);
+
+            Assert.AreEqual(expectedSum, actualNum, "Not correct");
         }
 
     }
