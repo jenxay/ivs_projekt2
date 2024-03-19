@@ -124,5 +124,18 @@ namespace IVSCalc
             Assert.AreEqual(expectedSum, actualNum, "Not correct");
         }
 
+        [TestMethod]
+        public void TestModulo()
+        {
+            var calculator = new Calculator();
+            double num1 = 9;
+            double num2 = 2;
+            double expectedSum = 1;
+
+            double actualNum = calculator.Modulo(num1, num2);
+
+            Assert.AreEqual(expectedSum, actualNum, "Not correct");
+        }
+
     }
 }

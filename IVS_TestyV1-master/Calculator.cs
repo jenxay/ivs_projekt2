@@ -81,6 +81,17 @@ namespace IVS_TestyV1
             return Math.Pow(x, 1.0 / n);
         }
 
+        public double Modulo(double a, double b)
+        {
+            if (b != 0)
+            {
+                return a % b;
+            }
+            else
+            {
+                throw new ArgumentException("Can't div by zero");
+            }
+        }
 
     }
 
