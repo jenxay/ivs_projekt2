@@ -1,19 +1,19 @@
-# IVS Projekt 2
+Prostredi
+---------
 
-## Introduction
-Welcome to our Calculator Project! This project aims to provide a simple yet powerful calculator that can handle basic arithmetic operations as well as some advanced mathematical functions.
+Ubuntu 64bit
+Windows 64bit
 
-## Features
-- Basic arithmetic operations (addition, subtraction, multiplication, division)
-- Advanced mathematical functions (exponents, nroots)
-- User-friendly interface (soon)
+Autori
+------
 
-## Getting Started
-To get started with this project, clone the repository to your local machine.
+Nazev tymu
+- xlogin01 jmeno prijmeni 
+- xlogin02 jmeno prijmeni 
+- xlogin03 jmeno prijmeni 
+- xlogin04 jmeno prijmeni 
 
-## License
-This project is licensed under the GNU 3.0 License - see the LICENSE.md file for details.
+Licence
+-------
 
-## Contact
-For any queries or feedback, please contact us at matyx300@gmail.com
-
+Tento program je poskytovan...
